@@ -1,0 +1,30 @@
+.box-first {
+  margin-left: 20vw;
+  padding-right: 45vw;
+}
+.box-first-text {
+  text-align: left;
+  margin-left: 2.5vw;
+}
+
+.box-first-item {
+  width: 20vh;
+  height: 20vh;
+  border: 5px solid black;
+}
+
+.box-second-text {
+  text-align: left;
+  margin-left: 2.5vw;
+}
+
+.box-second-item {
+  width: 20vh;
+  height: 20vh;
+  border: 5px solid black;
+}
+
+.all-boxes {
+  display: flex;
+  flex-direction: row;
+}
