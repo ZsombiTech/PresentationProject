@@ -10,7 +10,7 @@ function Box() {
           <div className="box-first-item"></div>
         </div>
         <div className="box-second">
-          <p className="box-second-text">Ide jon a cumo</p>
+          <p className="box-second-text">Ide jon a cucc</p>
           <div className="box-second-item"></div>
         </div>
       </div>
