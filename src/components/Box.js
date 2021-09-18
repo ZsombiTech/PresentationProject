@@ -1,18 +1,22 @@
 import React from "react";
 import "./Box.css";
 
+const number = 1;
+
+const circle = (
+  <div className="dots">
+    <div className="circle"></div>
+    <div className="circle-text">P{number}</div>
+  </div>
+);
+
 function Box() {
   return (
-    <div>
-      <div className="all-boxes">
-        <div className="box-first">
-          <p className="box-first-text">Ide kell irni</p>
-          <div className="box-first-item"></div>
-        </div>
-        <div className="box-second">
-          <p className="box-second-text">Ide jon a cucc</p>
-          <div className="box-second-item"></div>
-        </div>
+    <div className="small-box">
+      <div className="text-small-box">MARK THE COURIES with a CLICK</div>
+      <div className="drawing-area"></div>
+      <div className="button-done">
+        <p>DONE</p>
       </div>
     </div>
   );

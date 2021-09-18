@@ -4,7 +4,7 @@ import Box from "./Box";
 
 function Boxes() {
   return (
-    <div>
+    <div className="whitebox">
       <Box />
     </div>
   );
