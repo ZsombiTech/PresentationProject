@@ -2,8 +2,8 @@ import React, { useState } from "react";
 import "./Box.css";
 
 function Box() {
-  const [xertek, setXertek] = useState();
-  const [yertek, setYertek] = useState();
+  const [xertek, setXertek] = useState(10);
+  const [yertek, setYertek] = useState(10);
   const [itemek, setItemek] = useState([]);
 
   const circle = (
@@ -16,12 +16,16 @@ function Box() {
   const kattintas = (event) => {
     setYertek(event.clientY);
     setXertek(event.clientX);
-    console.log(xertek, yertek);
     const item2 = {
-      main: circle,
       xkoord: xertek,
       ykoord: yertek,
     };
+    setItemek((oldArray) => [...oldArray, item2]);
+    console.log(itemek);
+  };
+
+  const done1 = () => {
+    console.log("tovabbmentel");
   };
 
   return (
@@ -30,13 +34,23 @@ function Box() {
       <div className="drawing-area">
         {/*itemek.map((item) => {
           const mystyle = {
-            top: item.ykoord,
-            left: item.xkoord,
+            top: item.ykoord + "px",
+            left: item.xkoord + "px",
           };
-          <div style={mystyle}>{item.main}</div>;
+          <div className="dots" style={mystyle}>
+            <div className="circle"></div>
+            <div className="circle-text">P1</div>
+          </div>;
         })*/}
+        {/*<div
+          className="dots"
+          style={{ top: yertek + "px", left: xertek + "px" }}
+        >
+          <div className="circle"></div>
+          <div className="circle-text">P1</div>
+        </div> ez mukodik */}
       </div>
-      <div className="button-done">
+      <div className="button-done" onClick={done1}>
         <p>DONE</p>
       </div>
     </div>

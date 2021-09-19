@@ -31,8 +31,8 @@
 .button-done p {
   position: fixed;
   background-color: #74e378;
-  top: 31.5vw;
-  left: 63vw;
+  top: 32.7vw;
+  left: 65.3vw;
   padding: 0.5vw;
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;
@@ -46,6 +46,7 @@
   margin: 0;
   padding: 0;
   display: inline-block;
+  position: fixed;
 }
 .circle {
   background: black;
