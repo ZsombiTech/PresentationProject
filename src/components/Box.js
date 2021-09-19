@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import "./Box.css";
 import ButtonDone from "./ButtonDone";
 import UpperText from "./UpperText";
@@ -8,6 +8,8 @@ function Box() {
   const [yertek, setYertek] = useState(500);
   const [itemek, setItemek] = useState([]);
   const [szamozas, setSzamozas] = useState(1);
+  const [szoveg, setSzoveg] = useState("MARK THE COURIES with a CLICK");
+  const [szovegTrue, setSzovegTrue] = useState(true);
 
   const circle = (
     <div className="dots">
@@ -17,25 +19,24 @@ function Box() {
   );
 
   const kattintas = (event) => {
-    if (event.clientY > 25) {
-      setSzamozas((old) => old + 1);
-      setYertek(event.clientY);
-      setXertek(event.clientX);
-      const item2 = {
-        xkoord: xertek,
-        ykoord: yertek,
-        szamozas: szamozas,
-        main: circle,
-      };
-      setItemek((oldArray) => [...oldArray, item2]);
-      console.log(itemek);
-    }
+    setSzoveg("PRESS DONE");
+    setSzovegTrue(false);
+    setSzamozas((old) => old + 1);
+    setYertek(event.clientY);
+    setXertek(event.clientX);
+    const item2 = {
+      xkoord: xertek,
+      ykoord: yertek,
+      szamozas: szamozas,
+    };
+    setItemek((oldArray) => [...oldArray, item2]);
+    console.log(itemek);
   };
 
   return (
     <React.Fragment>
       <div className="small-box">
-        <UpperText />
+        <UpperText text={szoveg} szovegtrue={szovegTrue} />
         <div className="drawing-area" onClick={kattintas}>
           {/*itemek.map((item) => {
             const mystyle = {
