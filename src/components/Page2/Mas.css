@@ -1,0 +1,35 @@
+.kicsi-text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9vw;
+  float: left;
+  padding: 1vw;
+  padding-right: 19.7vw;
+  padding-left: 1.5vw;
+  background-color: #ebebeb;
+  border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-top-right-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  white-space: nowrap;
+  z-index: 3;
+}
+
+.masodik-esely {
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9vw;
+  float: left;
+  padding: 1vw;
+  padding-right: 32.4vw;
+  padding-left: 1.5vw;
+  background-color: #ebebeb;
+  border-top-left-radius: 10px;
+  -moz-border-top-left-radius: 15px;
+  -webkit-border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  -moz-border-top-right-radius: 15px;
+  -webkit-border-top-right-radius: 15px;
+  white-space: nowrap;
+  z-index: 3;
+}
