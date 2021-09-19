@@ -42,8 +42,10 @@ function Box2() {
               style={{ top: item.ykoord + "px", left: item.xkoord + "px" }}
               key={item.szamozas}
             >
-              <div className="circle"></div>
-              <div className="circle-text">P{item.szamozas}</div>
+              <div className="circle" style={{ backgroundColor: "red" }}></div>
+              <div className="circle-text" style={{ color: "red" }}>
+                A{item.szamozas}
+              </div>
             </div>
           ))}
           {/*
