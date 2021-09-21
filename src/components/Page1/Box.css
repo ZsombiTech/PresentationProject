@@ -1,13 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap");
 
 .drawing-area {
-  width: 40vw;
-  height: 30vw;
+  width: 100%;
   background-color: #feffdc;
-  border-radius: 15px;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   z-index: 1;
+  position: relative;
 }
 .dots {
   margin: 0;
@@ -24,4 +23,11 @@
 
 .circle-text {
   font-size: 1vw;
+}
+
+.small-box {
+  box-sizing: border-box;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  height: 100%;
 }

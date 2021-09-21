@@ -8,13 +8,14 @@ function ButtonDone() {
   };
 
   return (
-    <div className="button-done" onClick={done1}>
-      <p>
-        <Link to="/second" style={{ textDecoration: "none" }}>
-          DONE
-        </Link>
-      </p>
-    </div>
+    <Link
+      to="/second"
+      style={{ textDecoration: "none" }}
+      className="button-done"
+      onClick={done1}
+    >
+      DONE
+    </Link>
   );
 }
 

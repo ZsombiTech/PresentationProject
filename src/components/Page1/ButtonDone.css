@@ -1,15 +1,13 @@
-.button-done p {
-  position: fixed;
+.button-done {
+  box-sizing: border-box;
+  position: absolute;
+  bottom: 40px;
   background-color: #74e378;
-  top: 32.6vw;
-  left: 69.9vw;
   padding: 0.5vw;
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;
   width: 4vw;
-  height: 1.3vw;
+  padding: 15px;
   border-radius: 6vw;
-  -moz-border-radius: 6vw;
-  -webkit-border-radius: 6vw;
   z-index: 5;
 }

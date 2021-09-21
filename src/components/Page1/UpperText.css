@@ -1,10 +1,7 @@
 .text-small-box {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9vw;
-  float: left;
-  padding: 1vw;
-  padding-right: 22.9vw;
-  padding-left: 1.5vw;
+  padding: 15px;
   background-color: #ebebeb;
   border-top-left-radius: 10px;
   -moz-border-top-left-radius: 15px;
@@ -19,10 +16,7 @@
 .second-chance {
   font-family: "Montserrat", sans-serif;
   font-size: 0.9vw;
-  float: left;
-  padding: 1vw;
-  padding-right: 32.4vw;
-  padding-left: 1.5vw;
+  padding: 15px;
   background-color: #ebebeb;
   border-top-left-radius: 10px;
   -moz-border-top-left-radius: 15px;

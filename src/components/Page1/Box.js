@@ -3,11 +3,10 @@ import "./Box.css";
 import ButtonDone from "./ButtonDone";
 import UpperText from "./UpperText";
 
+let szamozas = 1;
+
 function Box() {
-  const [xertek, setXertek] = useState(2000);
-  const [yertek, setYertek] = useState(5000);
   const [itemek, setItemek] = useState([]);
-  const [szamozas, setSzamozas] = useState(0);
   const [szoveg, setSzoveg] = useState("MARK THE COURIES with a CLICK");
   const [szovegTrue, setSzovegTrue] = useState(true);
 
@@ -15,16 +14,13 @@ function Box() {
     event.preventDefault();
     setSzoveg("PRESS DONE");
     setSzovegTrue(false);
-    setSzamozas((old) => old + 1);
-    setYertek(event.clientY);
-    setXertek(event.clientX);
     const item2 = {
-      xkoord: xertek,
-      ykoord: yertek,
+      xkoord: event.clientX,
+      ykoord: event.clientY,
       szamozas: szamozas,
     };
     setItemek((oldArray) => [...oldArray, item2]);
-    console.log(itemek);
+    szamozas++;
   };
 
   return (

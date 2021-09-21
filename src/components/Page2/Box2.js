@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Box2.css";
+import "../Page1/Box.css";
 import ButtonDone2 from "./ButtonDone2";
 import Mas from "./Mas";
 

@@ -1,11 +1,8 @@
 .whitebox {
+  position: relative;
   width: 50vw;
   height: 34vw;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  padding: 30px;
   margin: auto;
   margin-top: 2vw;
   background-color: white;
