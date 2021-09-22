@@ -3,6 +3,7 @@ import "./App.css";
 import Boxes from "./components/Page1/Boxes";
 import Boxes2 from "./components/Page2/Boxes2";
 import Boxes3 from "./components/Page3/Boxes3";
+import Boxes4 from "./components/Page4/Boxes4";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 function App() {
   const [itemek, setItemek] = useState([]);
@@ -29,6 +30,9 @@ function App() {
               itemek3={itemek3}
               setItemek3={setItemek3}
             />
+          </Route>
+          <Route path="/fourth">
+            <Boxes4 />
           </Route>
         </Switch>
       </div>
