@@ -1,17 +1,18 @@
 import React from "react";
 import "../Styling/Boxes.css";
-import Box2 from "./Box2";
+import Box3 from "./Box3";
 
-function Boxes2(props) {
+function Boxes3(props) {
   return (
     <div className="whitebox">
-      <Box2
+      <Box3
         itemek1={props.itemek1}
         itemek2={props.itemek2}
-        setItemek2={props.setItemek2}
+        itemek3={props.itemek3}
+        setItemek3={props.setItemek3}
       />
     </div>
   );
 }
 
-export default Boxes2;
+export default Boxes3;

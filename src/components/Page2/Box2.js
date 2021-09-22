@@ -6,7 +6,6 @@ import Mas from "./Mas";
 let szamozas = 1;
 
 function Box2(props) {
-  const [itemek, setItemek] = useState([]);
   const [szoveg, setSzoveg] = useState("MARK THE “FROM” POINTS with a CLICK");
   const [szovegTrue, setSzovegTrue] = useState(true);
 
@@ -19,7 +18,7 @@ function Box2(props) {
       ykoord: event.clientY,
       szamozas: szamozas,
     };
-    setItemek((oldArray) => [...oldArray, item2]);
+    props.setItemek2((oldArray) => [...oldArray, item2]);
     szamozas++;
   };
 
@@ -47,7 +46,7 @@ function Box2(props) {
               </div>
             </div>
           ))}
-          {itemek.map((item) => (
+          {props.itemek2.map((item) => (
             /*const mystyle = {
               top: item.ykoord + "px",
               left: item.xkoord + "px",
