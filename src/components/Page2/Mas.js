@@ -1,9 +1,9 @@
 import React from "react";
-import "./Mas.css";
+import "../Page1/UpperText.css";
 
 function UpperText2(props) {
-  const elemet = <div className="kicsi-text">{props.text}</div>;
-  const elemet2 = <div className="masodik-esely">{props.text}</div>;
+  const elemet = <div className="text-small-box">{props.text}</div>;
+  const elemet2 = <div className="second-chance">{props.text}</div>;
   if (props.szovegtrue) {
     return elemet;
   } else {

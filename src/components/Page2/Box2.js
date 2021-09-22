@@ -3,11 +3,10 @@ import "../Page1/Box.css";
 import ButtonDone2 from "./ButtonDone2";
 import Mas from "./Mas";
 
+let szamozas = 1;
+
 function Box2() {
-  const [xertek, setXertek] = useState(2000);
-  const [yertek, setYertek] = useState(5000);
   const [itemek, setItemek] = useState([]);
-  const [szamozas, setSzamozas] = useState(0);
   const [szoveg, setSzoveg] = useState("MARK THE “FROM” POINTS with a CLICK");
   const [szovegTrue, setSzovegTrue] = useState(true);
 
@@ -15,16 +14,13 @@ function Box2() {
     event.preventDefault();
     setSzoveg("PRESS DONE");
     setSzovegTrue(false);
-    setSzamozas((old) => old + 1);
-    setYertek(event.clientY);
-    setXertek(event.clientX);
     const item2 = {
-      xkoord: xertek,
-      ykoord: yertek,
+      xkoord: event.clientX,
+      ykoord: event.clientY,
       szamozas: szamozas,
     };
     setItemek((oldArray) => [...oldArray, item2]);
-    console.log(itemek);
+    szamozas++;
   };
 
   return (

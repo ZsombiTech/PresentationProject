@@ -1,13 +1,18 @@
 .button-done {
+  --size: 60px;
   box-sizing: border-box;
   position: absolute;
-  bottom: 40px;
+  bottom: -100px;
   background-color: #74e378;
-  padding: 0.5vw;
+  padding-right: 15px;
+  padding-left: 15px;
+  line-height: var(--size);
+  right: -100px;
+  height: var(--size);
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;
-  width: 4vw;
-  padding: 15px;
-  border-radius: 6vw;
+  border-radius: calc(var(--size) / 2);
   z-index: 5;
+  text-decoration: none;
+  color: black !important;
 }

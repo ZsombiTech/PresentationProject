@@ -1,5 +1,6 @@
 import React from "react";
-import "./ButtonDone2.css";
+import "../Page1/ButtonDone.css";
+import { Link } from "react-router-dom";
 
 function ButtonDone2() {
   const done1 = () => {
@@ -7,9 +8,14 @@ function ButtonDone2() {
   };
 
   return (
-    <div className="button-done" onClick={done1}>
-      <p>DONE</p>
-    </div>
+    <Link
+      to="/third"
+      style={{ textDecoration: "none" }}
+      className="button-done"
+      onClick={done1}
+    >
+      DONE
+    </Link>
   );
 }
 
