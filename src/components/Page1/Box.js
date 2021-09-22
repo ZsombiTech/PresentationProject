@@ -1,12 +1,11 @@
 import React, { useState } from "react";
-import "./Box.css";
+import "../Styling/Box.css";
 import ButtonDone from "./ButtonDone";
 import UpperText from "./UpperText";
 
 let szamozas = 1;
 
-function Box() {
-  const [itemek, setItemek] = useState([]);
+function Box(props) {
   const [szoveg, setSzoveg] = useState("MARK THE COURIES with a CLICK");
   const [szovegTrue, setSzovegTrue] = useState(true);
 
@@ -19,7 +18,7 @@ function Box() {
       ykoord: event.clientY,
       szamozas: szamozas,
     };
-    setItemek((oldArray) => [...oldArray, item2]);
+    props.setItemek((oldArray) => [...oldArray, item2]);
     szamozas++;
   };
 
@@ -28,7 +27,7 @@ function Box() {
       <div className="small-box">
         <UpperText text={szoveg} szovegtrue={szovegTrue} />
         <div className="drawing-area" onClick={kattintas}>
-          {itemek.map((item) => (
+          {props.itemek.map((item) => (
             /*const mystyle = {
               top: item.ykoord + "px",
               left: item.xkoord + "px",

@@ -1,5 +1,5 @@
 import React from "react";
-import "./UpperText.css";
+import "../Styling/UpperText.css";
 
 function UpperText(props) {
   const elemet = <div className="text-small-box">{props.text}</div>;

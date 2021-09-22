@@ -1,11 +1,11 @@
 import React, { useState } from "react";
-import "../Page1/Box.css";
+import "../Styling/Box.css";
 import ButtonDone2 from "./ButtonDone2";
 import Mas from "./Mas";
 
 let szamozas = 1;
 
-function Box2() {
+function Box2(props) {
   const [itemek, setItemek] = useState([]);
   const [szoveg, setSzoveg] = useState("MARK THE “FROM” POINTS with a CLICK");
   const [szovegTrue, setSzovegTrue] = useState(true);
@@ -28,6 +28,25 @@ function Box2() {
       <div className="small-box">
         <Mas text={szoveg} szovegtrue={szovegTrue} />
         <div className="drawing-area" onClick={kattintas}>
+          {props.itemek1.map((item) => (
+            /*const mystyle = {
+              top: item.ykoord + "px",
+              left: item.xkoord + "px",
+            };*/
+            <div
+              className="dots"
+              style={{ top: item.ykoord + "px", left: item.xkoord + "px" }}
+              key={item.szamozas}
+            >
+              <div
+                className="circle"
+                style={{ backgroundColor: "black" }}
+              ></div>
+              <div className="circle-text" style={{ color: "black" }}>
+                A{item.szamozas}
+              </div>
+            </div>
+          ))}
           {itemek.map((item) => (
             /*const mystyle = {
               top: item.ykoord + "px",

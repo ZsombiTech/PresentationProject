@@ -1,11 +1,11 @@
 import React from "react";
-import "./Boxes.css";
+import "../Styling/Boxes.css";
 import Box from "./Box";
 
-function Boxes() {
+function Boxes(props) {
   return (
     <div className="whitebox">
-      <Box />
+      <Box itemek={props.itemek} setItemek={props.setItemek} />
     </div>
   );
 }

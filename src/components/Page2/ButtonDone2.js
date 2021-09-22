@@ -1,5 +1,5 @@
 import React from "react";
-import "../Page1/ButtonDone.css";
+import "../Styling/ButtonDone.css";
 import { Link } from "react-router-dom";
 
 function ButtonDone2() {
