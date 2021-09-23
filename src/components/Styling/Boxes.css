@@ -1,5 +1,4 @@
 .whitebox {
-  position: relative;
   width: 50vw;
   height: 34vw;
   padding: 30px;
@@ -8,4 +7,5 @@
   background-color: white;
   border-radius: 15px;
   -moz-border-radius: 15px;
+  position: relative;
 }

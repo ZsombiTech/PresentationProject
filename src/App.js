@@ -5,10 +5,30 @@ import Boxes2 from "./components/Page2/Boxes2";
 import Boxes3 from "./components/Page3/Boxes3";
 import Boxes4 from "./components/Page4/Boxes4";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+
 function App() {
   const [itemek, setItemek] = useState([]);
   const [itemek2, setItemek2] = useState([]);
   const [itemek3, setItemek3] = useState([]);
+
+  const results = {
+    points_courier: itemek,
+  };
+
+  const results2 = {
+    points_from: itemek2,
+  };
+  const results3 = {
+    points_to: itemek3,
+  };
+  const results_ossz = {
+    points_courier: itemek,
+    points_from: itemek2,
+    points_to: itemek3,
+  };
+
+  const results_json = JSON.stringify(results_ossz);
+
   return (
     <Router>
       <div className="App">
@@ -32,7 +52,7 @@ function App() {
             />
           </Route>
           <Route path="/fourth">
-            <Boxes4 />
+            <Boxes4 results={results} results2={results2} results3={results3} />
           </Route>
         </Switch>
       </div>

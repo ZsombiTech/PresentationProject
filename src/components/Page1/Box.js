@@ -53,6 +53,10 @@ function Box(props) {
         </div>
       </div>
       <ButtonDone />
+      <br />
+      <br />
+      <br />
+      <br />
     </React.Fragment>
   );
 }

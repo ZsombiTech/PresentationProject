@@ -2,12 +2,12 @@
   --size: 60px;
   box-sizing: border-box;
   position: absolute;
-  bottom: -100px;
+  bottom: -40px;
   background-color: #74e378;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 20px;
+  padding-left: 20px;
   line-height: var(--size);
-  right: -100px;
+  right: -10px;
   height: var(--size);
   font-family: "Montserrat", sans-serif;
   font-size: 1vw;

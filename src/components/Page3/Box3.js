@@ -90,6 +90,10 @@ function Box3(props) {
         </div>
       </div>
       <ButtonDone3 />
+      <br />
+      <br />
+      <br />
+      <br />
     </React.Fragment>
   );
 }
