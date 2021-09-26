@@ -42,7 +42,7 @@ function Box2(props) {
                 style={{ backgroundColor: "black" }}
               ></div>
               <div className="circle-text" style={{ color: "black" }}>
-                A{item.szamozas}
+                P{item.szamozas}
               </div>
             </div>
           ))}

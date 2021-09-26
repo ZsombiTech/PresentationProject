@@ -42,7 +42,7 @@ function Box3(props) {
                 style={{ backgroundColor: "black" }}
               ></div>
               <div className="circle-text" style={{ color: "black" }}>
-                A{item.szamozas}
+                P{item.szamozas}
               </div>
             </div>
           ))}
@@ -74,7 +74,7 @@ function Box3(props) {
             >
               <div className="circle" style={{ backgroundColor: "blue" }}></div>
               <div className="circle-text" style={{ color: "blue" }}>
-                A{item.szamozas}
+                B{item.szamozas}
               </div>
             </div>
           ))}
